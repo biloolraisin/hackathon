@@ -1,0 +1,44 @@
+public class Post {
+    private String author;
+    private String content;
+    private String category; // e.g., "food", "clothes", "housing"
+    private long timestamp;
+
+    // Constructor, getters, and setters
+}
+
+
+public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
+    private List<Post> posts;
+
+    // Constructor, onCreateViewHolder, onBindViewHolder, getItemCount
+}
+
+class PostViewHolder extends RecyclerView.ViewHolder {
+    TextView authorTextView;
+    TextView contentTextView;
+    TextView categoryTextView;
+
+    public PostViewHolder(@NonNull View itemView) {
+        super(itemView);
+        // Initialize views
+    }
+}
+
+public class MainActivity extends AppCompatActivity {
+    private RecyclerView postRecyclerView;
+    private FloatingActionButton createPostFab;
+    private PostAdapter postAdapter;
+    private List<Post> posts;
+
+    // onCreate, onActivityResult, and other methods
+}
+
+public class NewPostActivity extends AppCompatActivity {
+    private EditText authorEditText;
+    private EditText contentEditText;
+    private Spinner categorySpinner;
+    private Button submitButton;
+
+    // onCreate, and other methods
+}
