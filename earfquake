@@ -5,6 +5,13 @@ public class Post {
     private long timestamp;
 
     // Constructor, getters, and setters
+/*
+
+This class represents the data model for a single post. It will contain properties such as author, content, category, timestamp, etc. You can create getters and setters for these properties.
+
+*/
+
+
 }
 
 
@@ -12,6 +19,12 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     private List<Post> posts;
 
     // Constructor, onCreateViewHolder, onBindViewHolder, getItemCount
+/*
+
+This class extends RecyclerView.Adapter and is responsible for binding the post data to the RecyclerView, which will display the list of posts. It requires the implementation of three methods: onCreateViewHolder, onBindViewHolder, and getItemCount.
+
+*/
+
 }
 
 class PostViewHolder extends RecyclerView.ViewHolder {
@@ -23,6 +36,13 @@ class PostViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
         // Initialize views
     }
+/*
+
+This is an inner class within PostAdapter that extends RecyclerView.ViewHolder. It is responsible for holding references to the individual views within each item in the RecyclerView.
+
+*/
+
+
 }
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
     private List<Post> posts;
 
     // onCreate, onActivityResult, and other methods
+/*
+
+This class is responsible for setting up the RecyclerView with the PostAdapter and handling user interactions, such as clicking the FloatingActionButton to create a new post. It also receives the new post data from NewPostActivity.
+
+*/
+
 }
 
 public class NewPostActivity extends AppCompatActivity {
@@ -41,4 +67,9 @@ public class NewPostActivity extends AppCompatActivity {
     private Button submitButton;
 
     // onCreate, and other methods
+/*
+
+This class is responsible for handling post creation. It contains input fields for the post content, category, and a button to submit the post. After the user submits the form, it returns the new post data to MainActivity using an Intent.
+
+*/
 }
